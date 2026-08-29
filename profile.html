@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile — Alpha Events</title>
+<meta name="description" content="View your registered, upcoming and completed events at Alpha Arts and Science College, Porur.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-mark">AE</span>Alpha Events</a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="events.html" data-nav="events">Events</a>
+        <a href="register.html" data-nav="register">Register</a>
+        <a href="profile.html" data-nav="profile" class="active">My Profile</a>
+        <a href="gallery.html" data-nav="gallery">Gallery</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-search-toggle aria-label="Search events">⌕</button>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+        <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="search-panel">
+    <div class="container"><input type="text" placeholder="Search events…" aria-label="Search events"></div>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="eyebrow">Student Dashboard</div>
+      <h1>My Profile</h1>
+      <p>Your registrations for this browser, pulled from demo storage. Register for an event to see it appear here.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:34px;">
+    <div class="container" data-profile-root>
+
+      <div class="profile-head">
+        <div class="profile-avatar" data-profile-initial>A</div>
+        <div class="profile-info">
+          <h2 data-profile-name>—</h2>
+          <div class="profile-meta">
+            <span>🎓 Reg. No: <b data-profile-reg>—</b></span>
+            <span>🏛️ <b data-profile-dept>—</b></span>
+            <span>📘 <b data-profile-year>—</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="chip active" data-profile-tab="all">All Registrations</button>
+        <button class="chip" data-profile-tab="upcoming">Upcoming Events</button>
+        <button class="chip" data-profile-tab="completed">Completed Events</button>
+      </div>
+
+      <div data-profile-panel="all"><div data-regs-all></div></div>
+      <div data-profile-panel="upcoming" style="display:none;"><div data-regs-upcoming></div></div>
+      <div data-profile-panel="completed" style="display:none;"><div data-regs-completed></div></div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="brand-mark">AE</span>Alpha Events</a>
+          <p>Alpha Arts and Science College, Porur.<br>The campus hub for every cultural, technical and sporting event.</p>
+          <div class="social-row">
+            <a href="#" class="icon-btn" aria-label="Instagram">◍</a>
+            <a href="#" class="icon-btn" aria-label="X / Twitter">✕</a>
+            <a href="#" class="icon-btn" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Alpha Events</h5>
+          <ul>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+            <li><a href="events.html?category=Technical">Technical Events</a></li>
+            <li><a href="events.html?category=Cultural">Cultural Events</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Alpha Events — Demo Event Registration Portal</span>
+        <span>Built for Alpha Arts and Science College, Porur</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
